@@ -1,0 +1,45 @@
+{
+  "intro": "main",
+  "konzole": {
+    "sloupce": 90,
+    "řádky": 30,
+    "zpráva_o_velikosti": "Prosím zvětšte okno tak, aby šly vidět bílé okraje, poté zmáčkněte klávesu mezerník.",
+    "input": "Stiskněte mezerník"
+  },
+  "mapy": {
+    "render_distance": 8,
+    "mapy": ["demo.vgm"]
+  },
+  "start": {
+    "mapa": "demo",
+    "dialog": "start1",
+    "startx": 7,
+    "starty": 7,
+    "player_size": 1,
+    "player_damage": 2,
+    "dialogy": {
+      "oddělovač": "<Stiskněte klávesu mezerník>",
+      "start1": {
+          "text": "Vítejte ve hře glitched!|Tento krátký návod vás provede začátky ve hře.",
+          "next": "start2"
+      },
+      "start2": {
+          "text": "Hra se ovládá šipkami na klávesnici.|Vy jste ten žlutý čtvereček uprostřed obarzovky.",
+          "next": "start1"
+      }
+    }
+    "npcs": [
+      {
+        "color": "R",
+        "size": 1,
+        "movement": "AI-random",
+        "enemy": true,
+        "attack": false,
+        "attack-speed": 1,
+        "take-damage": true,
+        "hp-bar": true,
+        "hp": 30
+      }
+    ]
+  }
+}
